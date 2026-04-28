@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-key */
-/* eslint-disable react/prop-types */
 import * as React from "react";
 import Footer from "../components/footer";
 import AppHeader from "../components/header";
@@ -21,7 +20,7 @@ const MemberPage = (props) => {
         {/* 上、下一屆 */}
         <div className="flex flex-wrap justify-between text-iospink md:px-16 text-xl font-medium gap-y-4">
           {prevUrl ? (
-            <a href={prevUrl} className="flex items-center">
+            <a href={"/members/" + prevUrl} className="flex items-center">
               <Icon icon="ant-design:caret-left-outlined" color="#ecadad" />
               上一屆幹部介紹
             </a>
@@ -29,7 +28,7 @@ const MemberPage = (props) => {
             <div />
           )}
           {nextUrl ? (
-            <a href={nextUrl} className="flex items-center">
+            <a href={"/members/" + nextUrl} className="flex items-center">
               下一屆幹部介紹
               <Icon icon="ant-design:caret-right-outlined" color="#ecadad" />
             </a>
@@ -46,7 +45,7 @@ const MemberPage = (props) => {
         <div className="h-8" /> {/* 空白區 */}
         <div className="flex flex-wrap justify-between text-iospink md:px-16 text-xl font-medium gap-y-4">
           {prevUrl ? (
-            <a href={prevUrl} className="flex items-center">
+            <a href={"/members/" + prevUrl} className="flex items-center">
               <Icon icon="ant-design:caret-left-outlined" color="#ecadad" />
               上一屆幹部介紹
             </a>
@@ -54,7 +53,7 @@ const MemberPage = (props) => {
             <div />
           )}
           {nextUrl ? (
-            <a href={nextUrl} className="flex items-center">
+            <a href={"/members/" + nextUrl} className="flex items-center">
               下一屆幹部介紹
               <Icon icon="ant-design:caret-right-outlined" color="#ecadad" />
             </a>

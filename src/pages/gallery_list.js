@@ -102,7 +102,6 @@ const galleryItem = (node) => {
         <h2 className="mt-4 text-xl font-bold text-center">{node.name}</h2>
         <div className="font-bold text-gray-700">時間：{node.date}</div>
         <div className="font-bold text-gray-700">地點：{node.location}</div>
-        {/* eslint-disable-next-line react/jsx-no-target-blank */}
         <a
           href={
             node.gdrive_url && node.gdrive_url.trim() !== ""
